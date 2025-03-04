@@ -24,7 +24,7 @@
 }
 
 .font-alegreya {
-  font-family: "Alegreya";
+  font-family: "Hubot Sans";
 }
 
 body {
@@ -35,7 +35,6 @@ html {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
-
   &::-webkit-scrollbar {
     display: none;
   }

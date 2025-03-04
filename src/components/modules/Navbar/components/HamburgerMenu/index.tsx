@@ -6,7 +6,7 @@ export const HamburgerMenu = () => {
   const pathHash = window.location.hash;
   const isActive = (href: string) => pathHash.includes(href);
   return (
-    <div className="sm:hidden absolute top-4.5 sm:top-8 right-6 z-50">
+    <div className="sm:hidden absolute top-4.5 sm:top-8 right-6 z-100">
       <TopDrawer>
         <TopDrawer.Trigger>
           <Menu className="w-6 h-6 text-white" />

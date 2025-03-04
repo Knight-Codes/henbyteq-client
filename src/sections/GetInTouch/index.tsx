@@ -120,11 +120,11 @@ export const GetInTouch = () => {
             </form>
           </div>
 
-          <div className="sm:px-12 py-4 sm:w-[50%] flex flex-col justify-center space-y-8">
+          <div className="px-0 sm:px-12 py-4 sm:w-[50%] flex flex-col justify-center space-y-8">
             {contacts.map((contact, index) => (
-              <div key={index} className="space-y-2 sm:space-y-4">
+              <div key={index} className="space-y-2">
                 <p className="text-xl text-[#9C9C9C]">{contact.label}</p>
-                <p className="font-cinzel text-lg sm:text-2xl">
+                <p className="font-cinzel text-lg">
                   {contact.content}
                 </p>
               </div>

@@ -1,3 +1,4 @@
+import { Fragment } from "react/jsx-runtime";
 import { Navbar } from "@/components/modules/Navbar";
 import { HeroSection } from "@/sections/HeroSection";
 import { AboutUs } from "@/sections/AboutUs";
@@ -8,7 +9,7 @@ import { GetInTouch } from "@/sections/GetInTouch";
 import { Footer } from "@/components/modules/Footer";
 
 export const HomeLayout = () => (
-  <>
+  <Fragment>
     <Navbar />
     <HeroSection />
     <AboutUs />
@@ -17,5 +18,5 @@ export const HomeLayout = () => (
     <Innovations />
     <GetInTouch />
     <Footer />
-  </>
+  </Fragment>
 );
