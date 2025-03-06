@@ -5,7 +5,7 @@ import { Card } from "./Card";
 import { metricsData } from "../metricsData";
 
 const layoutStyles = cva(
-  "flex flex-col xs:flex-row items-center justify-between flex-wrap bg-[#121212] gap-8 md:px-32 2xl:px-60"
+  "flex flex-col xs:flex-row items-center justify-between flex-wrap bg-[#121212] gap-8 px-[10%]"
 );
 
 export const Layout = () => (

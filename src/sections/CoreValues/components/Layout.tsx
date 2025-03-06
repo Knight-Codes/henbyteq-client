@@ -4,7 +4,7 @@ import { coreValuesData } from "../coreValuesData";
 import { Card } from "./Card";
 
 const containerStyles = cva(
-  "flex flex-col md:flex-row items-center justify-between gap-8 px-4 md:px-10 2xl:px-50"
+  "flex flex-col md:flex-row items-center justify-between gap-8 px-[4%]"
 );
 
 export const Layout = () => {

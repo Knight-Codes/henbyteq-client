@@ -2,11 +2,11 @@ import AboutUsImg from "@/assets/images/about-us.png";
 
 export const TextContent = () => (
   <div className="h-full flex flex-col items-center justify-center gap-8">
-    <div className="flex justify-center items-center gap-12 mt-4">
+    <div className="px-4 flex flex-col sm:flex-row justify-center items-center gap-12 mt-4">
       <img
         src={AboutUsImg}
         alt="group discussion"
-        className="w-[550px] h-[360px] rounded-xl"
+        className="w-[550px] h-[280px] sm:h-[350px] rounded-xl"
       />
 
       <div className="space-y-8">

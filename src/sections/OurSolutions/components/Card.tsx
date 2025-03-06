@@ -23,7 +23,7 @@ const descriptionStyle = cva(
 );
 
 const infographicContainerStyle = cva(
-  "w-full mt-12 flex flex-col sm:flex-row items-start justify-between gap-12"
+  "mt-12 flex flex-col sm:flex-row items-start justify-start gap-12 sm:gap-16"
 );
 
 export const Card = ({
@@ -62,11 +62,11 @@ export const Card = ({
 
         <div className={infographicContainerStyle()}>
           {infographics.map((infographic, infographicIndex) => (
-            <div key={infographicIndex} className="relative">
+            <div key={infographicIndex} className="relative w-full sm:w-auto">
               <img
                 src={infographic.image}
                 alt={infographic.label}
-                className="w-full h-[200px] object-cover bg-black/80"
+                className="w-full h-[210px] object-cover bg-black/80"
               />
               <div className="absolute inset-0 bg-black/50" />
               <p className="capitalize text-center font-alegreya text-xl font-medium leading-7 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[150px]">

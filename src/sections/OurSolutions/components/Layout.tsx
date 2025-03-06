@@ -6,7 +6,7 @@ import { ourSolutionsData } from "../ourSolutionsData";
 import { Card } from "./Card";
 
 const layoutStyles = cva(
-  "flex flex-col items-center justify-between gap-8 px-6 md:px-10 2xl:px-50"
+  "flex flex-col items-center justify-start gap-8 px-[4%]"
 );
 
 export const Layout = () => {

@@ -33,15 +33,15 @@ export const GetInTouch = () => {
   });
   return (
     <section id="contact-us">
-      <div className="md:px-10 2xl:px-50 bg-[#121212] text-white pb-12">
-        <div className="p-4 space-y-8">
+      <div className="px-[4%] bg-[#121212] text-white pb-12">
+        <div className="space-y-8">
           <p className="text-[#9C9C9C] font-manrope text-lg">Get In Touch</p>
           <p className="font-cinzel text-2xl sm:max-w-[480px] sm:leading-12">
             Connect for Excellence: Your Gateway to Exceptional Solutions.
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-end px-4 pt-8 gap-2">
+        <div className="flex flex-col sm:flex-row items-end pt-8 gap-2">
           <div className="px-4 py-8 sm:p-12 w-[100%] sm:w-[40%] border border-white/80 flex flex-col justify-center">
             <p className="text-white font-cinzel text-xl py-6">
               Your Vision, Our Mission: Let's <br /> Shape Success Together.

@@ -4,7 +4,7 @@ import { innovationsData } from "../innovationsData";
 
 export const Layout = () => (
   <motion.div
-    className="flex flex-wrap gap-4 px-6 py-6 mt-4"
+    className="flex flex-wrap gap-6 py-0 mt-8"
     initial="hidden"
     whileInView="visible"
     transition={{ staggerChildren: 0.2 }}
@@ -23,7 +23,7 @@ export const Layout = () => (
         }}
         className={innovation.width}
       >
-        <Card title={innovation.title} description={innovation.description} />
+        <Card title={innovation.title} description={innovation.description} image={innovation.image} />
       </motion.div>
     ))}
   </motion.div>
