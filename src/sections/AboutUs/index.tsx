@@ -10,7 +10,7 @@ const containerStyles = cva(
 export const AboutUs = () => (
   <section id="company">
     <div className={containerStyles()}>
-      <div className="pt-20 space-y-24 md:px-32 2xl:px-56">
+      <div className="pt-20 md:px-32 2xl:px-56">
         <SectionHeader
           section="Who We Are"
           title="Innovating Tomorrow, Engineered for Today"
