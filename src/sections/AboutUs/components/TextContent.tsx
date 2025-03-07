@@ -3,14 +3,17 @@ import AboutUsImg from "@/assets/images/about-us.png";
 export const TextContent = () => (
   <div className="h-full flex flex-col items-center justify-center gap-8">
     <div className="px-4 flex flex-col sm:flex-row justify-center items-center gap-12 mt-4">
-      <img
-        src={AboutUsImg}
-        alt="group discussion"
-        className="w-[550px] h-[280px] sm:h-[350px] rounded-xl"
-      />
+      <div className="relative">
+        <img
+          src={AboutUsImg}
+          alt="group discussion"
+          className="w-[550px] h-[280px] sm:h-[350px] rounded-xl"
+        />
+        <div className="absolute inset-0 bg-black/35" />
+      </div>
 
       <div className="space-y-8">
-        <p className="text-left text-xl sm:text-2xl font-alegreya font-normal sm:w-[500px] leading-9">
+        <p className="text-left text-xl sm:text-2xl font-manope font-medium sm:w-[500px] leading-9">
           To lead the future of AI, IoT, and sustainable technology by
           delivering high-efficiency, user-friendly, and intelligent solutions
           that enhance daily life and business operations.

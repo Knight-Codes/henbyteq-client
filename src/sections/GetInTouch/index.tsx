@@ -1,9 +1,13 @@
+import { useState } from "react";
+import { toast } from "sonner";
+import { useFormik } from "formik";
+import * as yup from "yup";
+import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useFormik } from "formik";
-import * as yup from "yup";
 import { LeftArrowSVG } from "@/assets/svgs";
+import { apiSubmitResponse } from "@/api/api";
 
 const contacts = [
   { label: "Contact Us", content: "Email: henbyteq.us@gmail.com" },
@@ -19,6 +23,8 @@ const validationSchema = yup.object({
 });
 
 export const GetInTouch = () => {
+  const [loading, setLoading] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -27,8 +33,17 @@ export const GetInTouch = () => {
       message: "",
     },
     validationSchema,
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      try {
+        setLoading(true);
+        await apiSubmitResponse(values);
+        toast("Thank you for reaching out to us!");
+        setLoading(false);
+      } catch (err) {
+        console.log(err);
+        setLoading(false);
+        toast("Something went wrong");
+      }
     },
   });
   return (
@@ -114,17 +129,24 @@ export const GetInTouch = () => {
               <Button
                 type="submit"
                 className="mt-2 w-36 h-14 bg-white text-black hover:bg-white/80 hover:cursor-pointer"
+                disabled={loading}
               >
-                Submit <LeftArrowSVG className="w-12 h-12" />
+                {loading ? (
+                  <Loader2 className="animate-spin" />
+                ) : (
+                  <>
+                    Submit <LeftArrowSVG className="w-12 h-12" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
 
-          <div className="px-0 sm:px-12 py-4 sm:w-[50%] flex flex-col justify-center space-y-8">
+          <div className="px-0 sm:px-12 py-4 w-[100%] sm:w-[50%] flex flex-col justify-center space-y-8">
             {contacts.map((contact, index) => (
               <div key={index} className="space-y-2">
                 <p className="text-xl text-[#9C9C9C]">{contact.label}</p>
-                <p className="font-cinzel text-lg">
+                <p className="font-cinzel text-md sm:text-lg">
                   {contact.content}
                 </p>
               </div>

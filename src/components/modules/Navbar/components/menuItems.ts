@@ -1,19 +1,19 @@
 export const menuItems = [
   {
     label: "Company",
-    path: "#company",
+    path: "/#company",
   },
   {
     label: "Services",
-    path: "#services",
+    path: "/#services",
   },
   {
     label: "Portfolio",
-    path: "#portfolio",
+    path: "/#portfolio",
   },
   {
     label: "Contact Us",
-    path: "#contact-us",
+    path: "/#contact-us",
   },
   {
     label: "Careers",

@@ -17,8 +17,8 @@ export const Card = ({
   <div className={cn(cardVariants())}>
 	<img src={image} alt={title} className="w-[90%] h-[300px] mb-8 object-cover rounded-lg" />
     <div className="space-y-4">
-      <h2 className="font-alegreya text-lg text-center font-medium">{title}</h2>
-      <p className="font-manrope text-center mt-2 text-gray-300">
+      <h2 className="font-alegreya text-lg text-center font-medium mx-2">{title}</h2>
+      <p className="font-manrope text-center mt-2 text-gray-300 mx-2">
         {description}
       </p>
     </div>
