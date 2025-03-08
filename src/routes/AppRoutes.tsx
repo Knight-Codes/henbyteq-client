@@ -10,11 +10,11 @@ export const AppRoutes = () => {
       element: <HomeLayout />,
       children: [
         {
-          path: "/",
+          path: "",
           element: <Home />,
         },
         {
-          path: "/careers",
+          path: "careers",
           element: <Careers />,
         },
       ],
