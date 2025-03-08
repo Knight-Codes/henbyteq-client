@@ -14,7 +14,7 @@ export const AppRoutes = () => {
           element: <Home />,
         },
         {
-          path: "careers",
+          path: "/careers",
           element: <Careers />,
         },
       ],
